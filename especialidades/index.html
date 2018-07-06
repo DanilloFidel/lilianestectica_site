@@ -10,7 +10,7 @@
     <!--resfresh-->
     <meta http-equiv="refresh" content="320" />
     <!--css-->
-    <link rel="icon" href="../_imagens/favicon.png" type="imagem/gif"> <!-- alterar esse icone -->
+    <link rel="icon" href="../_images/favicon.png" type="imagem/gif"> <!-- alterar esse icone -->
     <link rel="stylesheet" type="text/css" href="../_css/estilo.css">
     <!--responsivo-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--Jquery-->
     <script src="../_javascript/jquery-3.3.1.min.js"></script>
+    <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
 </head>
 
 <body>
@@ -38,16 +40,16 @@
         <a class="nav-link" href="../index.html">Página Inicial</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../especialidades/index.html">Especialidades</a>
+        <a class="nav-link" href="">Especialidades<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../promocoes/index.html">Promoções</a>
+        <a class="nav-link" href="../promocoes/">Promoções</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../dicas-de-beleza/index.html">Dicas de beleza</a>
+        <a class="nav-link" href="../dicas-de-beleza/">Dicas de beleza</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">Contato<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="../contato/">Contato</a>
       </li>
     </ul>
   </div>
@@ -90,7 +92,25 @@
     <!-- javascript -->
     <script src="../_javascript/bootstrap.min.js"></script>
     <script src="../_javascript/jquery.js"></script>
+    <script type="text/javascript" src="_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+    <script>
+        //scroll top plugin
 
+        $(function() {
+            dyCodeHighlighter.init();
+        });
+
+        dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_images/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
 
 </body>
 
